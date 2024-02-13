@@ -4,9 +4,10 @@ import Form from './components/Form';
 import Display from './components/Display';
 
 function App() {
-  const [result, setResult] = useState('');
-  const handleFormSubmit = (url) => {
-setResult(url);
+  const [result, setResult] = useState(null);
+
+  const handleFormSubmit = (data) => {
+     setResult(data);
   };
   return (
     <div className="App">

@@ -4,7 +4,11 @@ const Results = ({ result }) => {
   return (
     <div>
       <h2>Results:</h2>
-      <p>{result}</p>
+      <ul>
+        {result.results.map((item) => (
+          <li key={item.id}>{item.name}</li>
+        ))}
+      </ul>
     </div>
   );
 };
